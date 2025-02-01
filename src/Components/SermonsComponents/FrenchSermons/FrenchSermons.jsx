@@ -187,7 +187,7 @@ export default function FrenchSermons() {
         anchor={"right"}
         onClose={() => setOpenDrawer(false)}
       >
-        <div className="w-[520px] h-full relative p-2 overflow-x-hidden">
+        <div className="w-80 md:w-[520px] h-full relative p-2 overflow-x-hidden">
           <div className="">
             <h1 className="text-gray-800 font-bold">MISE A JOUR DE :</h1>
             <span className="text-orange-600 font-bold">

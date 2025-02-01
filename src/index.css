@@ -19,6 +19,16 @@
   width: calc(100vw - 240px);
 }
 
+@media screen and (max-width: 767px) {
+  .sideBar {
+    display: none;
+  }
+
+  .outlet {
+    width: 100%;
+  }
+}
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;

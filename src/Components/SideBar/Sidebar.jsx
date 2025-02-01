@@ -16,7 +16,7 @@ export default function SidebarMenu() {
     navigate("/");
   };
   return (
-    <div className="hidden sideBar h-full bg-blue-50 border-r md:block relative shadow ">
+    <div className="hidden sideBar h-full bg-blue-50 border-r md:block relative shadow">
       <div className="flex items-center justify-center gap-4 mt-5">
         <span className=" text-2xl font-extrabold">MATTHIEU25:6</span>
         <img src={BannierImage} alt="" className="w-7 h-7 rounded-full " />

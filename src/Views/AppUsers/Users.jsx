@@ -53,6 +53,12 @@ export default function Users() {
   const [deleteUserLoading, setDelelteUserLoading] = useState(false);
   const [actionToPerform, setActionToPerform] = useState(false);
 
+  const [loadingStates, setLoadingSatates] = useState({
+    dataLoading: false,
+    deleteLoading: false,
+    actionToPerformLoading: false,
+  });
+
   ///////////LOAD DATA ON COMPONENT WHEN COMPONENT IS MOUNTED::::::::::::::
 
   const getUserListes = () => {
@@ -73,6 +79,10 @@ export default function Users() {
   const openModalToAddUser = () => {
     document.getElementById("addUser").showModal();
     setActionToPerform(false);
+  };
+
+  const testState = () => {
+    setLoadingSatates(loadingStates.actionToPerformLoading === true);
   };
 
   /**
@@ -353,7 +363,7 @@ export default function Users() {
         </div>
       </dialog>
 
-      {/* DELETE USER MODAL  */}
+      {/* DELETE USER MODAL*/}
 
       <dialog id="deleteUser" className="modal">
         <div className="modal-box">
